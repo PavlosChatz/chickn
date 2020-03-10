@@ -1,14 +1,10 @@
 import numpy as np
+
 from Models import *
-
-
-def load_data_animals():
-    X_train = np.array([])
-    Y_train = np.array([])
-    X_test = np.array([])
-    Y_test = np.array([])
-    return X_train, Y_train, X_test, Y_test
+from Data import load_data_animals10
 
 
 if __name__ == '__main__':
-    X_train, Y_train, X_test, Y_test = load_data_animals()
+    dim = (64, 64)
+    X_train, Y_train, X_val, Y_val = load_data_animals10(dim)
+    model_helper(X_train, Y_train, X_val, Y_val)
