@@ -13,9 +13,9 @@ def train_validation_split(X, Y, train_percent):
     Y_validate = Y[val_border: ]
     return X_train, Y_train, X_validate, Y_validate
 
-def load_data_animals10(dims = (224, 224)):
+def load_data_animals10(dims = (224, 224), base_path = ".",):
     # dims -> (h, w) 2 int tuple - output images h x w x 3
-    path = ".\\datasets\\animals10\\raw-img"
+    path = base_path + "\\datasets\\animals10\\raw-img"
     foldernames = os.listdir(path)
     
     categories = []
