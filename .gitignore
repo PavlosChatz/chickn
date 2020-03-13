@@ -1,6 +1,9 @@
 # Dataset files
 **/datasets
 
+# VSCode Settings
+**/vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
